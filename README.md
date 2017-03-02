@@ -11,3 +11,10 @@ A sample query looks like below:
  Syntax of the function is:
  
  group_concat_with_sorting(column_for_ordering_must_be_integer,column_for_concat,delimiter);
+ hive-exec-1.1.0 jar has to be in the build path while creating the udaf jar
+ 
+ Sample command to create the temporary function:
+ 
+ create temporary function group_concat_with_sorting() as 'com.hiveudaf.groupconcat.GroupConcatWithSort';
+
+ 
