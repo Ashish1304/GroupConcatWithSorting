@@ -10,4 +10,4 @@ A sample query looks like below:
  Here base64 encoding is used so that the new lines may not cause distruption of layout in the hive table.
  Syntax of the function is:
  
- group_concat_with_sorting(<column_for_ordering_must_be_integer>,<column_for_concat>,<delimiter>);
+ group_concat_with_sorting(column_for_ordering_must_be_integer,column_for_concat,delimiter);
