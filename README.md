@@ -1,5 +1,5 @@
 # GroupConcatWithSorting
-This is a udaf that helps do a concat on one column ordered by another column.
+This is a hive udaf that helps do a concat on one column ordered by another column.
 The delimiter to be used in concat has to be passed in the function.
 A sample query looks like below:
 
