@@ -44,6 +44,8 @@ public final class GroupConcatWithSort extends UDAF
          */
         public boolean iterate(Integer key, String value,String delimiter)
         {
+         if(null==value)//handling null
+           value="";
         	System.out.println("~~~~~~~~~~~ inside iterator ~~~~~~~~~~~");
             if(!inputMap.containsKey(key)) {
             	System.out.println("key-> "+key+" Input--> "+ delimiter+uniqueSeparator+value);
